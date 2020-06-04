@@ -25,10 +25,10 @@ header {
   width: 50%;
   margin-left: 20px;
 }
-.carrito__container {
+.cart__container {
   width: 50%;
 }
-.carrito__container ul{
+.cart__container ul{
   float: right;
   margin-right: 30px;
 }
@@ -37,10 +37,10 @@ header {
   list-style-type: none;
   width: 50%;
 }
-.submenu #carrito{
+.submenu #cart{
   display: none;
 }
-.submenu:hover #carrito{
+.submenu:hover #cart{
   display: block;
   position: absolute;
   right:0;
@@ -51,14 +51,14 @@ header {
   min-height: 400px;
   min-width: 300px;
 }
-.vacio {
+.empty {
   padding: 10px;
   background-color: crimson;
   text-align: center;
   border-radius: 10px;
   color: white;
 }
-.borrar-curso {
+.delete-course {
   background-color: red;
   border-radius: 50%;
   padding: 5px 10px;
@@ -66,13 +66,13 @@ header {
   color: white;
   font-weight: bold;
 }
-#lista-cursos {
+#list-courses {
   padding: 30px 0;
 }
-.encabezado__cursos{
+.heading__course{
   margin-bottom: 30px;
 }
-.cursos__container{
+.course__container{
   margin-top: 30px;
   display: grid;
   grid-gap: 25px;
@@ -80,11 +80,11 @@ header {
 	margin: 0 auto;
   padding: 0 10px;
 }
-.curso__item{
+.course__item{
   border: 1px solid rgba(0,0,0,0.25);
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.card__img, .imagen__curso{
+.card__img, .image__course{
   width: 100%;
 }
 .info__card{
@@ -95,7 +95,7 @@ header {
 .info__card *{
   margin-bottom: 10px;
 }
-.precio{
+.price{
   text-decoration: line-through;
   color: red;
 }
@@ -105,7 +105,7 @@ header {
   float: right;
   font-size: 1.25em;
 }
-.agregar-carrito{
+.goto-carrito{
   background: #00B2BD;
   padding: 5px 10px;
   border-radius: 6px;
@@ -116,7 +116,7 @@ header {
   position: absolute;
   bottom: 0;
 }
-.agregar-carrito:hover{
+.goto-carrito:hover{
   background: #00828a;
   color: white;
 }
@@ -128,17 +128,17 @@ header {
 }
 
 @media (min-width: 472px) and (max-width: 767px) {
-  .cursos__container{
+  .course__container{
     grid-template-columns: 1fr 1fr;
    }
  }
  @media all and (min-width: 768px) {
-  .cursos__container{
+  .course__container{
     grid-template-columns: 1fr 1fr 1fr;
    }
  }
  @media all and (min-width: 949px) {
-   .cursos__container{
+   .course__container{
      grid-template-columns: 1fr 1fr 1fr 1fr;
    }
  }
